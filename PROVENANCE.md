@@ -12,11 +12,11 @@
 
 The upstream skill's `related_skills` lists optional external suggestions not bundled here. Its Hermes mechanics reference is platform-specific. Do not mistake either for mandatory companion dependencies or a cross-platform guarantee. Scientific claims and linked research are inherited from that pinned revision; this collection has not independently reproduced those studies.
 
-## Five generic companions
+## Seven generic companions
 
-`goal-contract`, `independent-review`, `test-execution-and-reporting`, `session-handover`, and `lesson-capture` are newly written generic documents for this collection, informed by the flagship's role/evidence/scope principles and the maintainer's working practices. They are not wholesale exports of an installed skill library. Private project references, authentication recipes, local scripts and historical session notes are not redistributed.
+`goal-contract`, `independent-review`, `test-execution-and-reporting`, `session-handover`, `lesson-capture`, `technical-decision-evaluation`, and `project-continuity` are newly written generic documents for this collection, informed by the flagship's role/evidence/scope principles and the maintainer's working practices. They are not wholesale exports of an installed skill library. Private project references, authentication recipes, local scripts and historical session notes are not redistributed.
 
-This is a method collection, not a new multi-agent runtime, enforcement engine, or guarantee that an agent will follow instructions. The five companions are versioned independently in their metadata and licensed under the repository's [MIT license](LICENSE). They may be installed separately; optional sibling suggestions do not replace their own contracts.
+This is a method collection, not a new multi-agent runtime, enforcement engine, or guarantee that an agent will follow instructions. The seven companions are versioned independently in their metadata and licensed under the repository's [MIT license](LICENSE). They may be installed separately; optional sibling suggestions do not replace their own contracts.
 
 ## Updates
 

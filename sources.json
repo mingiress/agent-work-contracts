@@ -25,7 +25,9 @@
       "independent-review",
       "test-execution-and-reporting",
       "session-handover",
-      "lesson-capture"
+      "lesson-capture",
+      "technical-decision-evaluation",
+      "project-continuity"
     ],
     "origin": "New generic companion documents authored for this collection; informed by the crew-contract method and the maintainer’s working practices. No local enterprise references or scripts are redistributed.",
     "license": "MIT"

@@ -1,10 +1,10 @@
 # Contributing
 
-Keep the six skills independently usable. Additions to this collection need a clear task boundary and a reason an existing skill cannot own the behavior; do not split one workflow into many mandatory fragments.
+Keep every declared skill independently usable. Additions to this collection need a clear task boundary and a reason an existing skill cannot own the behavior; do not split one workflow into many mandatory fragments.
 
 ## Document contract
 
-The five companion entrypoints use JSON frontmatter between YAML `---` delimiters. JSON is a YAML-compatible subset and lets the standard-library validator parse their metadata without a YAML dependency. Include `name`, a concrete `Use when ...` description, `license: MIT`, and string-valued `metadata.author` and `metadata.version`. All metadata values must be strings under the [Agent Skills specification](https://agentskills.io/specification#metadata-field); encode tags as a comma-separated string, not an array. The vendored upstream keeps its original YAML and nested Hermes metadata extension unchanged.
+The generic companion entrypoints use JSON frontmatter between YAML `---` delimiters. JSON is a YAML-compatible subset and lets the standard-library validator parse their metadata without a YAML dependency. Include `name`, a concrete `Use when ...` description, `license: MIT`, and string-valued `metadata.author` and `metadata.version`. All metadata values must be strings under the [Agent Skills specification](https://agentskills.io/specification#metadata-field); encode tags as a comma-separated string, not an array. The vendored upstream keeps its original YAML and nested Hermes metadata extension unchanged.
 
 Each companion needs explicit use/non-use conditions, a bounded workflow, an output contract, permission and stop boundaries, pitfalls, a verification checklist and one useful example. Supporting templates stay inside the same skill directory so an individual install remains usable. Optional references to other skills must not require the whole collection.
 
