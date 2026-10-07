@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "name": "crew-contract",
+    "repository": "https://github.com/mfang0126/crew-contract",
+    "commit": "b7d045cb09d746cdf9780a2e03d8f151da76c75d",
+    "source_path": "skills/crew-contract",
+    "license": "MIT",
+    "copyright": "Copyright (c) 2026 Ming Fang",
+    "modifications": "none",
+    "sha256": {
+      "LICENSE": "02c658c282ea97f3ca2e97b691e2fdc6fd6c901e459e49d89ebff8ada0fc3c52",
+      "README.md": "e3d823aeb973ee67756c7aa4250e85b5db2e987cc22b6c1fc3bab759f5f9999f",
+      "README.zh-CN.md": "e91c5c34f097e1d44d82fdf037db3818cdbb93f944d270d359f4e9ac77945575",
+      "SKILL.md": "80251678cfbbafb93050a75eb4883d011027e7fb7cd1f0c1afb23b71cb27071b",
+      "references/child-brief-template.md": "e555a6be88ca8ae58a14003c95f647148715af677c94da60f14b00a8f3cf0641",
+      "references/class-playbook.md": "619a732c2e1ecf5635d2be41ca19b62de6157641ad6c58108074586343dccad2",
+      "references/evidence-index.md": "41d8180f2c148248e423c935042312c61ba051de81af39a8e5417bd91065c9dd",
+      "references/hermes-mechanics.md": "bfb3199e361e9d8ea926883d59247dfd9ce00052a99498801ed026294640cc1d"
+    }
+  },
+  "companions": {
+    "names": [
+      "goal-contract",
+      "independent-review",
+      "test-execution-and-reporting",
+      "session-handover",
+      "lesson-capture"
+    ],
+    "origin": "New generic companion documents authored for this collection; informed by the crew-contract method and the maintainer’s working practices. No local enterprise references or scripts are redistributed.",
+    "license": "MIT"
+  }
+}
