@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate this six-skill collection without third-party dependencies.
+"""Validate this declared skill collection without third-party dependencies.
 
 Companion frontmatter uses JSON, a YAML-compatible subset. The unchanged
 upstream YAML is checked for required scalars and against its pinned hashes;
@@ -16,6 +16,7 @@ from urllib.parse import unquote, urlsplit
 EXPECTED = {
     "crew-contract", "goal-contract", "independent-review",
     "test-execution-and-reporting", "session-handover", "lesson-capture",
+    "technical-decision-evaluation", "project-continuity",
 }
 REQUIRED_HEADINGS = (
     "When to Use", "Workflow", "Output Contract", "Common Pitfalls",
@@ -164,7 +165,7 @@ def validate_repository(root):
     paths = sorted((root / "skills").glob("*/SKILL.md"))
     errors = []
     if {p.parent.name for p in paths} != EXPECTED:
-        errors.append("package must contain exactly the six declared skills")
+        errors.append(f"package must contain exactly the {len(EXPECTED)} declared skills")
     for path in paths:
         errors.extend(validate_skill(path.parent, root))
     errors.extend(validate_upstream(root))
@@ -203,7 +204,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.skill:
         if args.skill not in EXPECTED:
-            parser.error("--skill must be one of the six declared names")
+            parser.error("--skill must be one of the declared names")
         errors = validate_skill(args.root / "skills" / args.skill, args.root)
     else:
         errors = validate_repository(args.root)
@@ -211,7 +212,7 @@ def main(argv=None):
         for error in errors:
             print("FAIL:", error, file=sys.stderr)
         return 1
-    print("PASS:", args.skill or "six skills, supporting links, privacy patterns and pinned upstream hashes")
+    print("PASS:", args.skill or f"{len(EXPECTED)} skills, supporting links, privacy patterns and pinned upstream hashes")
     return 0
 
 

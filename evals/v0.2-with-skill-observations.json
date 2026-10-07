@@ -1,0 +1,64 @@
+{
+  "method": "Read each new SKILL.md and its standalone template, then answer each hypothetical scenario once from the skill, using only the scenario facts. Mapped every original check to a literal quote in the answer. This is an application smoke check, not a blinded or causal efficacy study.",
+  "cases": [
+    {
+      "skill": "technical-decision-evaluation",
+      "answer": "Decision memo (no execution): options are retain the working adapter (status quo), replace the platform, or wait for the upstream fix; an assigned issue is not delivery or an ETA. Evidence: the adapter passed a narrow local check; onboarding burden is reported; migration effort, outage risk, maintainer ETA and comparative lifecycle costs are unknown. I will not invent a payback period or treat the sponsor's ‘hack’ label as evidence; include the people cost of onboarding and maintenance. Conditional recommendation: retain the adapter for now while the owner obtains scoped migration and outage evidence and verifies upstream status; reconsider replacement only if the evidence supports it and the decision owner approves. Revisit when those facts are available; escalate to the decision owner if a choice is required before then. No replacement, spending, or other execution is authorized by this memo.",
+      "observed_checks": [
+        {
+          "check": "keeps status quo and upstream wait as options without treating wait as delivered",
+          "met": true,
+          "evidence_quote": "options are retain the working adapter (status quo), replace the platform, or wait for the upstream fix; an assigned issue is not delivery or an ETA."
+        },
+        {
+          "check": "labels missing ETA, migration cost and risk evidence as unknown or assumptions",
+          "met": true,
+          "evidence_quote": "migration effort, outage risk, maintainer ETA and comparative lifecycle costs are unknown."
+        },
+        {
+          "check": "does not invent numeric ROI or dismiss human maintenance concerns",
+          "met": true,
+          "evidence_quote": "I will not invent a payback period or treat the sponsor's ‘hack’ label as evidence; include the people cost of onboarding and maintenance."
+        },
+        {
+          "check": "gives conditional recommendation, revisit/escalation evidence and no execution permission",
+          "met": true,
+          "evidence_quote": "Conditional recommendation: retain the adapter for now while the owner obtains scoped migration and outage evidence and verifies upstream status; reconsider replacement only if the evidence supports it and the decision owner approves. Revisit when those facts are available; escalate to the decision owner if a choice is required before then. No replacement, spending, or other execution is authorized by this memo."
+        }
+      ],
+      "verdict": "4/4 checks met in this one-shot hypothetical application. Not evidence of general efficacy."
+    },
+    {
+      "skill": "project-continuity",
+      "answer": "Pickup report (read-only): follow the root startup instructions to the existing status record; do not create a second authority. The record's old commit and ‘complete’ declaration are stale relative to the live checkout's uncommitted edits and failing current check; the older README is historical evidence of a different phase, not current live proof. Pickup is blocked pending authorized reconciliation; owner is unknown from the supplied facts. No permission exists to edit protected instructions/configuration, alter the status record, run further work, or claim cross-machine recovery from ignored local state. Safe next action: report the conflict and ask the authorized project owner to reconcile the existing record against the exact live revision, edits and failed check; stop until approved. No files or settings changed.",
+      "observed_checks": [
+        {
+          "check": "discovers or follows the existing authority path without silently creating a second authority",
+          "met": true,
+          "evidence_quote": "follow the root startup instructions to the existing status record; do not create a second authority."
+        },
+        {
+          "check": "separates current live evidence, stale declared status and historical README",
+          "met": true,
+          "evidence_quote": "The record's old commit and ‘complete’ declaration are stale relative to the live checkout's uncommitted edits and failing current check; the older README is historical evidence of a different phase, not current live proof."
+        },
+        {
+          "check": "does not alter protected instructions/configuration or infer write permission",
+          "met": true,
+          "evidence_quote": "No permission exists to edit protected instructions/configuration, alter the status record, run further work, or claim cross-machine recovery from ignored local state."
+        },
+        {
+          "check": "marks pickup partial or blocked with a safe next action and no unsupported cross-machine recovery claim",
+          "met": true,
+          "evidence_quote": "Pickup is blocked pending authorized reconciliation; owner is unknown from the supplied facts. No permission exists to edit protected instructions/configuration, alter the status record, run further work, or claim cross-machine recovery from ignored local state. Safe next action: report the conflict and ask the authorized project owner to reconcile the existing record against the exact live revision, edits and failed check; stop until approved."
+        }
+      ],
+      "verdict": "4/4 checks met in this one-shot hypothetical application. Not evidence of actual cross-machine recovery or general efficacy."
+    }
+  ],
+  "limitations": [
+    "One response per hypothetical case; no control comparison or causal efficacy claim.",
+    "Scenario facts are hypothetical and are not repository observations.",
+    "Same-family review; shared model-family blind spots remain."
+  ]
+}

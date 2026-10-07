@@ -1,0 +1,24 @@
+{
+  "method": "Read-only root-start exercise using public package files, not private session state or a fresh remote clone.",
+  "pickup_drill": {
+    "result": "partial/blocked",
+    "method": "Started at repository root, discovered README.md as the public navigation entry, followed its linked package documentation, and did not inspect private .hermes state for this drill. No path or expected answer was supplied to the drill.",
+    "route": "README.md provides the skill-selection, installation and package-validation route; it links VALIDATION.md, PROVENANCE.md, sources.json and CONTRIBUTING.md. These describe the package, not an active-project current-state authority.",
+    "authority": "No existing public current-state authority for this repository's active work was discoverable from that route.",
+    "status": "Package purpose and declared release are documented; active objective, phase, mutable status, owner and current blocker are unknown from public repository files.",
+    "blocker": "No public startup instruction leads to a current-state record that can be reconciled against live work.",
+    "next_action": "Ask the authorized project owner to identify the approved existing startup route/current-state authority; until then report the gap and do not create a new authority or infer project status.",
+    "evidence": [
+      "README.md",
+      "VALIDATION.md",
+      "PROVENANCE.md",
+      "CONTRIBUTING.md"
+    ],
+    "portability": "Not established; no cross-machine clone/recipient test was performed, and no portable current-state authority was found."
+  },
+  "limitations": [
+    "Same-model-family review; not cross-family proof.",
+    "Partial/blocked pickup is an observed discovery gap, not proof of cross-machine recovery.",
+    "No native install or cross-harness runtime was exercised."
+  ]
+}
